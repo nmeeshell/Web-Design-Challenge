@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Web Visualization Dashboard</title>
+  <title>Bootstrap Visualization Dashboard</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
@@ -18,8 +17,8 @@
 </head>
 
 <body>
-  <!-- Start Navbar -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+ <!-- Start Navbar -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#">Latitude</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -46,22 +45,22 @@
     </div>
   </nav>
 <!-- End Navbar -->
-
   <!-- Content Section -->
   <div class="container">
     <div class="row">
       <div class="col-sm-8">
         <!-- Left box  -->
-        <div class="box">
-          <h3 class="title">Humidity</h3>
+        <div class="box" style="padding-bottom: 5px;">
+          <h3 class="title">Max Temperature</h3>
           <hr>
-          <img src="Resources/Fig2.png" alt="Humidity Graph">
-          <p>Humidity does not show a strong correlation to latitude. The visualization shows a great variety of
-            humidity percentages at different latitudes. Therefore, we cannot conclude that there is a conclusive
-            pattern between humidity and latitude.</p>
+          <img src="Resources/Fig1.png" alt="Max Temperature Graph">
+          <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude).
+            More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of the
+            year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this
+            data was gathered.</p>
         </div>
       </div>
-      <div class="col-sm-8">
+      <div class="col-sm-82">
         <!-- Right Box -->
         <div class="box">
           <h5 class="title">Visualizations</h5>
@@ -72,12 +71,12 @@
             <div class="row" style="padding-bottom: 30px;">
               <div class="col-sm-8">
                 <a href="max_temperature.html">
-                  <img class="panel" src="Resources/Fig1.png" alt="Max Temperature Image">
+                  <img class="panel active" src="Resources/Fig1.png" alt="Max Temperature Image">
                 </a>
               </div>
-              <div class="col-sm-8">
+              <div class="col-6">
                 <a href="humidity.html">
-                  <img class="panel active" src="Resources/Fig2.png" alt="Humidity Graph">
+                  <img class="panel" src="Resources/Fig2.png" alt="Humidity Graph">
                 </a>
               </div>
             </div>
@@ -88,7 +87,7 @@
                   <img class="panel" src="Resources/Fig3.png" alt="Cloudiness Graph">
                 </a>
               </div>
-              <div class="col-sm-8">
+              <div class="col-6">
                 <a href="wind_speed.html">
                   <img class="panel" src="Resources/Fig4.png" alt="Wind Speed Graph">
                 </a>
